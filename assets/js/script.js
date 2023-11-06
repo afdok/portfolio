@@ -47,7 +47,7 @@ $(document).ready(function () {
         btn.value = 'Sending...';
 
         const serviceID = 'service_55jy9bp';
-        const templateID = 'template_xqa33ks';
+        const templateID = 'template_7s3x6uu';
 
         emailjs.init("zGZ7M2EbGmvgXl_WH");
 
