@@ -86,20 +86,94 @@ var typed = new Typed(".typing-text", {
 });
 // <!-- typed js effect ends -->
 
+// async function fetchData(type = "skills") {
+//     let response
+//     type === "skills" ?
+//         response = await fetch("../../skills.json")
+//         :
+//         response = await fetch("../../projects/projects.json")
+//     const data = await response.json();
+//     return data;
+// }
+
+// fetchData().then(data => {
+//     showSkills(data);
+//     console.log(data[0].name);
+// });
+
+
+// fetchData("projects").then(data => {
+//     showProjects(data);
+// });
+
+// function showSkills(skills) {
+//     let skillsContainer = document.getElementById("skillsContainer");
+//     let skillHTML = "";
+//     skills.forEach(skill => {
+//         skillHTML += `
+//         <div class="grid-item ${skill.category}">
+
+//         <div class="bar">
+//             <div class="info">
+//                 <img src=${skill.icon} alt="skill" />
+//                 <span>${skill.name}</span>
+//             </div>
+//         </div>`
+//     });
+//     skillsContainer.innerHTML = skillHTML;
+// }
+
+// function showProjects(projects) {
+//     let projectsContainer = document.querySelector(".work .box-container");
+//     let projectHTML = "";
+//     projects.slice(0, 10).filter(project => project.category != "android").forEach(project => {
+//         projectHTML += `
+//         <div class="box tilt">
+//       <img draggable="false" src="/assets/images/projects/${project.image}.png" alt="project" />
+//       <div class="content">
+//         <div class="tag">
+//         <h3>${project.name}</h3>
+//         </div>
+//         <div class="desc">
+//           <p>${project.desc}</p>
+//           <div class="btns">
+//             <a href="${project.links.view}" class="btn" target="_blank"><i class="fas fa-eye"></i> View</a>
+//             <a href="${project.links.code}" class="btn" target="_blank">Code <i class="fas fa-code"></i></a>
+//           </div>
+//         </div>
+//       </div>
+//     </div>`
+//     });
+//     projectsContainer.innerHTML = projectHTML;
+
+//     // <!-- tilt js effect starts -->
+//     VanillaTilt.init(document.querySelectorAll(".tilt"), {
+//         max: 15,
+//     });
+//     // <!-- tilt js effect ends -->
+
+//     /* ===== SCROLL REVEAL ANIMATION ===== */
+//     const srtop = ScrollReveal({
+//         origin: 'top',
+//         distance: '80px',
+//         duration: 1000,
+//         reset: true
+//     });
+
+//     /* SCROLL PROJECTS */
+//     srtop.reveal('.work .box', { interval: 200 });
+
+// }
+
 async function fetchData(type = "skills") {
     let response
     type === "skills" ?
         response = await fetch("skills.json")
         :
-        response = await fetch("projects.json")
+        response = await fetch("../../projects.json")
     const data = await response.json();
     return data;
 }
-
-fetchData().then(data => {
-    showSkills(data);
-    console.log(data[0].name);
-});
 
 function showSkills(skills) {
     let skillsContainer = document.getElementById("skillsContainer");
@@ -107,11 +181,11 @@ function showSkills(skills) {
     skills.forEach(skill => {
         skillHTML += `
         <div class="bar">
-            <div class="info">
+              <div class="info">
                 <img src=${skill.icon} alt="skill" />
                 <span>${skill.name}</span>
-            </div>
-        </div>`
+              </div>
+            </div>`
     });
     skillsContainer.innerHTML = skillHTML;
 }
@@ -158,11 +232,15 @@ function showProjects(projects) {
 
 }
 
-
+fetchData().then(data => {
+    showSkills(data);
+});
 
 fetchData("projects").then(data => {
     showProjects(data);
 });
+
+
 
 // <!-- tilt js effect starts -->
 VanillaTilt.init(document.querySelectorAll(".tilt"), {
@@ -199,18 +277,6 @@ document.onkeydown = function (e) {
         return false;
     }
 }
-
-// Start of Tawk.to Live Chat
-// var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
-// (function () {
-//     var s1 = document.createElement("script"), s0 = document.getElementsByTagName("script")[0];
-//     s1.async = true;
-//     s1.src = 'https://embed.tawk.to/60df10bf7f4b000ac03ab6a8/1f9jlirg6';
-//     s1.charset = 'UTF-8';
-//     s1.setAttribute('crossorigin', '*');
-//     s0.parentNode.insertBefore(s1, s0);
-// })();
-// End of Tawk.to Live Chat
 
 // Start of Tawk.to Script
 var Tawk_API=Tawk_API || {}, Tawk_LoadStart=new Date();
@@ -299,7 +365,7 @@ srtop.reveal('.skills .container', { interval: 200 });
 srtop.reveal('.skills .container .bar', { delay: 400 });
 
 /* SCROLL EDUCATION */
-srtop.reveal('.education .box', { interval: 200 });
+// srtop.reveal('.education .box', { interval: 200 });
 
 /* SCROLL PROJECTS */
 srtop.reveal('.work .box', { interval: 200 });
@@ -309,6 +375,6 @@ srtop.reveal('.experience .timeline', { delay: 400 });
 srtop.reveal('.experience .timeline .container', { interval: 400 });
 
 /* SCROLL CONTACT */
-srtop.reveal('.contact .container', { delay: 400 });
-srtop.reveal('.contact .container .form-group', { delay: 400 });
+// srtop.reveal('.contact .container', { delay: 400 });
+// srtop.reveal('.contact .container .form-group', { delay: 400 });
 

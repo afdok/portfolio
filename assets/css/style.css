@@ -577,6 +577,39 @@ header .navbar ul li a:hover::after {
 .skills h2 {
   color: #fff;
 }
+.skills .button-group{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin: 2rem auto;
+  width: 95%;
+  justify-content: center;
+  align-items: center;
+}
+.skills .button-group .btn{
+  outline: none;
+  padding: .5rem 1rem;
+  background: transparent;
+  color: #fff;
+  border: 1px solid #fff;
+  border-radius: 3px;
+  cursor: pointer;
+  font-weight: 500;
+}
+.skills .button-group .btn:hover{
+  background-color: #fff;
+  color: #000;
+}
+.skills .button-group .btn.is-checked{
+  background-color: #fff;
+  color: #000;
+}
+.skills .box-container{
+  display: flex;
+  flex-wrap: wrap;
+  gap:1.5rem;
+  margin: 2rem;
+}
 .skills .heading span {
   color: rgb(247, 46, 46);
 }

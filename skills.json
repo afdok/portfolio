@@ -1,98 +1,122 @@
 [
     {
         "name": "Angular",
+        "category": "dev",
         "icon": "https://icons8.com/icon/j9DnICNnlhGk/angularjs"
     },
     {
         "name": "Spring Boot",
+        "category": "secu",
         "icon": "https://icons8.com/icon/j9DnICNnlhGk/angularjs"
     },
     {
         "name": "NodeJS",
+        "category": "secu",
         "icon": "https://img.icons8.com/color/48/000000/nodejs.png"
     },
     {
         "name": "Redux",
+        "category": "secu",
         "icon": "https://img.icons8.com/color/48/000000/redux.png"
     },
     {
         "name": "MaterialUI",
+        "category": "secu",
         "icon": "https://img.icons8.com/color/48/000000/material-ui.png"
     },
     {
         "name": "TailwindCSS",
+        "category": "dev",
         "icon": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Tailwind_CSS_Logo.svg/48px-Tailwind_CSS_Logo.png"
     },
     {
         "name": "Bootstrap",
+        "category": "dev",
         "icon": "https://img.icons8.com/color/48/000000/bootstrap.png"
     },
     {
         "name": "Sass",
+        "category": "dev",
         "icon": "https://img.icons8.com/color/48/000000/sass.png"
     },
     {
         "name": "HTML5",
+        "category": "dev",
         "icon": "https://img.icons8.com/color/48/000000/html-5--v1.png"
     },
     {
         "name": "CSS3",
+        "category": "dev",
         "icon": "https://img.icons8.com/color/48/000000/css3.png"
     },
     {
         "name": "JavaScript",
+        "category": "dev",
         "icon": "https://img.icons8.com/color/48/000000/javascript--v1.png"
     },
     {
         "name": "Java",
+        "category": "dev",
         "icon": "https://img.icons8.com/color/48/000000/java-coffee-cup-logo--v1.png"
     },
     {
         "name": "PHP",
+        "category": "dev",
         "icon": "https://img.icons8.com/offices/48/000000/php-logo.png"
     },
     {
         "name": "Python",
+        "category": "dev",
         "icon": "https://img.icons8.com/color/48/000000/python--v1.png"
     },
     {
         "name": "MySQL",
+        "category": "dev",
         "icon": "https://img.icons8.com/color/48/000000/mysql-logo.png"
     },
     {
         "name": "PostgreSQL",
+        "category": "dev",
         "icon": "https://img.icons8.com/color/48/000000/postgreesql.png"
     },
     {
         "name": "Azure",
+        "category": "dev",
         "icon": "https://icons8.com/icon/VLKafOkk3sBX/azure"
     },
     {
         "name": "Heroku",
+        "category": "dev",
         "icon": "https://img.icons8.com/color/48/000000/heroku.png"
     },
     {
         "name": "Netlify",
+        "category": "dev",
         "icon": "https://img.icons8.com/external-tal-revivo-shadow-tal-revivo/48/000000/external-netlify-a-cloud-computing-company-that-offers-hosting-and-serverless-backend-services-for-static-websites-logo-shadow-tal-revivo.png"
     },
     {
         "name": "DigitalOcean",
+        "category": "dev",
         "icon": "https://img.icons8.com/ios-filled/48/0080FF/digitalocean.png"
     },
     {
         "name": "Bitbucket",
+        "category": "netwk",
         "icon": "https://img.icons8.com/ios-filled/48/1169ae/jquery.png"
     },
     {
         "name": "Git VCS",
+        "category": "netwk",
         "icon": "https://img.icons8.com/color/48/000000/git.png"
     },
     {
         "name": "GitHub",
+        "category": "netwk",
         "icon": "https://img.icons8.com/glyph-neue/48/ffffff/github.png"
     },
     {
         "name": "WordPress",
+        "category": "dev",
         "icon": "https://img.icons8.com/color/48/000000/wordpress.png"
     }    
 ]
