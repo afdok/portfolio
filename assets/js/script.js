@@ -47,20 +47,20 @@ $(document).ready(function () {
         btn.value = 'Sending...';
 
         const serviceID = 'service_55jy9bp';
-        const templateID = 'template_7s3x6uu';
+        const templateID = 'template_xqa33ks';
 
         emailjs.init("zGZ7M2EbGmvgXl_WH");
 
         emailjs.sendForm(serviceID, templateID, this)
         .then(() => {
             btn.value = 'Send Email';
-            alert('Sent!');
+            document.getElementById("contact-form").reset();
+            alert("Form Submitted Successfully");
         }, (err) => {
             btn.value = 'Send Email';
-            alert(JSON.stringify(err));
+            alert("Form Submission Failed! Try Again");
         });
         // <!-- emailjs to mail contact form data -->
-
     });
 });
 document.addEventListener('visibilitychange',
@@ -96,17 +96,22 @@ async function fetchData(type = "skills") {
     return data;
 }
 
+fetchData().then(data => {
+    showSkills(data);
+    console.log(data[0].name);
+});
+
 function showSkills(skills) {
     let skillsContainer = document.getElementById("skillsContainer");
     let skillHTML = "";
     skills.forEach(skill => {
         skillHTML += `
         <div class="bar">
-              <div class="info">
+            <div class="info">
                 <img src=${skill.icon} alt="skill" />
                 <span>${skill.name}</span>
-              </div>
-            </div>`
+            </div>
+        </div>`
     });
     skillsContainer.innerHTML = skillHTML;
 }
@@ -153,9 +158,7 @@ function showProjects(projects) {
 
 }
 
-fetchData().then(data => {
-    showSkills(data);
-});
+
 
 fetchData("projects").then(data => {
     showProjects(data);
@@ -215,12 +218,52 @@ var Tawk_API=Tawk_API || {}, Tawk_LoadStart=new Date();
     var s1 = document.createElement("script"), s0 = document.getElementsByTagName("script")[0];
     s1.async = true;
     s1.src = 'https://embed.tawk.to/6545437cf2439e1631eb79c8/1heb8v7q6';
-    // s11.src = 'https://embed.tawk.to/60df10bf7f4b000ac03ab6a8/1f9jlirg6';
     s1.charset = 'UTF-8';
     s1.setAttribute('crossorigin','*');
     s0.parentNode.insertBefore(s1, s0);
 })();
 //   End of Tawk.to Script
+
+function translatePage(targetLang) {
+    const apiKey = 'VOTRE_CLE_API_GOOGLE_TRANSLATE';
+    const currentLang = 'en'; // Langue actuelle de la page (en anglais dans cet exemple)
+
+    // Obtenir tout le contenu HTML de la page
+    const htmlContent = document.documentElement.innerHTML;
+
+    // Envoyer le contenu HTML à l'API de Google Translate pour traduction
+    const url = `https://translation.googleapis.com/language/translate/v2?key=${apiKey}`;
+    const data = {
+        q: htmlContent,
+        target: targetLang,
+        source: currentLang
+    };
+
+    fetch(url, {
+        method: 'POST',
+        body: JSON.stringify(data),
+        headers: {
+            'Content-Type': 'application/json',
+        }
+    })
+    .then(response => response.json())
+    .then(data => {
+        const translatedHtml = data.data.translations[0].translatedText;
+
+        // Mettre à jour le contenu HTML de la page avec la traduction
+        document.open();
+        document.write(translatedHtml);
+        document.close();
+    })
+    .catch(error => {
+        console.error('Erreur de traduction : ' + error);
+    });
+}
+
+// Appeler la fonction pour traduire la page lors du chargement
+document.addEventListener('DOMContentLoaded', function() {
+    translatePage('fr'); // Remplacez 'fr' par la langue cible souhaitée
+});
 
 /* ===== SCROLL REVEAL ANIMATION ===== */
 const srtop = ScrollReveal({
