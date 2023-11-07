@@ -572,6 +572,7 @@ header .navbar ul li a:hover::after {
 .skills {
   /* background: linear-gradient(to bottom, #512e3d, #bba18e); 323844*/
   background: linear-gradient(to bottom, #512e3d, #424751);
+  min-height: max-content;
 }
 .skills h2 {
   color: #fff;
@@ -596,7 +597,7 @@ header .navbar ul li a:hover::after {
 }
 .skills .container .bar {
   margin-bottom: 15px;
-  padding: 10px;
+  /* padding: 10px; */
   border-radius: 1rem;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
   background: rgba(0, 0, 22, 0.9);
@@ -623,7 +624,39 @@ header .navbar ul li a:hover::after {
   margin-left: 0.5rem;
 }
 /* skills media queries starts*/
-@media screen and (max-width: 600px) {
+@media (max-width: 1096px) {
+  .skills .container {
+    padding: 0;
+    margin: 0;
+  }
+  .skills .container .row {
+    grid-template-columns: repeat(6, 1fr);
+    margin: 1rem;
+    padding: 2rem 0.2rem 2rem 0.2rem;
+    gap: 1rem;
+  }
+  .skills .container {
+    margin-top: 5px;
+    width: 100%;
+  }
+}
+@media (max-width: 910px) {
+  .skills .container {
+    padding: 0;
+    margin: 0;
+  }
+  .skills .container .row {
+    grid-template-columns: repeat(4, 1fr);
+    margin: 1rem;
+    padding: 2rem 0.2rem 2rem 0.2rem;
+    gap: 1rem;
+  }
+  .skills .container {
+    margin-top: 5px;
+    width: 100%;
+  }
+}
+@media (max-width: 624px) {
   .skills .container {
     padding: 0;
     margin: 0;
@@ -639,14 +672,19 @@ header .navbar ul li a:hover::after {
     width: 100%;
   }
 }
-@media screen and (max-width: 1230px) {
+
+/* @media screen and (min-width: 601px) and (max-width: 1230px) {
+  .skills .container {
+    padding: 0;
+    margin: 0;
+  }
   .skills .container .row {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     flex-wrap: wrap;
     gap: 1.8rem;
   }
-}
+} */
 /* skills media queries ends*/
 /* skills section ends */
 
