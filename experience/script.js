@@ -26,21 +26,21 @@ const srtop = ScrollReveal({
 });
 
 /* SCROLL EXPERIENCE */
-srtop.reveal('.experience .timeline',{delay: 400});
-srtop.reveal('.experience .timeline .container',{interval: 400}); 
+srtop.reveal('.experience ',{delay: 400});
+srtop.reveal('.experience  .container',{interval: 400}); 
 
 
-// Start of Tawk.to Live Chat
-var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+// Start of Tawk.to Script
+var Tawk_API=Tawk_API || {}, Tawk_LoadStart=new Date();
 (function(){
-var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
-s1.async=true;
-s1.src='https://embed.tawk.to/60df10bf7f4b000ac03ab6a8/1f9jlirg6';
-s1.charset='UTF-8';
-s1.setAttribute('crossorigin','*');
-s0.parentNode.insertBefore(s1,s0);
+    var s1 = document.createElement("script"), s0 = document.getElementsByTagName("script")[0];
+    s1.async = true;
+    s1.src = 'https://embed.tawk.to/6545437cf2439e1631eb79c8/1heb8v7q6';
+    s1.charset = 'UTF-8';
+    s1.setAttribute('crossorigin','*');
+    s0.parentNode.insertBefore(s1, s0);
 })();
-// End of Tawk.to Live Chat
+//   End of Tawk.to Script
 
 
 // disable developer mode
@@ -73,3 +73,62 @@ function () {
         $("#favicon").attr("href", "assets/images/android-chrome-512x512.png");
     }
 });
+
+//debut a supprimer
+
+function getExperiences() {
+    return fetch("experience.json")
+        .then(response => response.json())
+        .then(data => {
+            return data
+        });
+}
+
+function showExperiences(experiences) {
+    let experiencesContainer = document.querySelector(".experience .timeline");
+    let experiencesHTML = "";
+    experiences.forEach(exp => {
+        experiencesHTML += `
+        <div class="container ${exp.category}">
+            <div class="content">
+            <div class="tag">
+                <h2>${exp.tag}</h2>
+            </div>
+            <div class="desc">
+                <h3>${exp.title}</h3>
+                <p>${exp.date}</p>
+            </div>
+            </div>
+        </div>`
+    });
+    experiencesContainer.innerHTML = experiencesHTML;
+}
+///Fin a supprimer
+
+// Charger les données depuis le fichier JSON
+fetch('experience.json')
+  .then(response => response.json())
+  .then(data => {
+    const timeline = document.querySelector('.timeline');
+
+    // Parcourir les données et créer les éléments HTML
+    data.timeline.forEach(item => {
+      const container = document.createElement('div');
+      container.classList.add('container', item.position);
+
+      container.innerHTML += `
+        <div class="content">
+          <div class="tag">
+            <h2>${item.tag}</h2>
+          </div>
+          <div class="desc">
+            <h3>${item.title}</h3>
+            <p>${item.date}</p>
+          </div>
+        </div>
+      `;
+
+      timeline.appendChild(container);
+    });
+  })
+  .catch(error => console.error('Erreur lors du chargement des données JSON :', error));

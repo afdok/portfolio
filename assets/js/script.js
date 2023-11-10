@@ -97,20 +97,22 @@ async function fetchData(type = "skills") {
     return data;
 }
 
+
 function showSkills(skills) {
     let skillsContainer = document.getElementById("skillsContainer");
     let skillHTML = "";
     skills.forEach(skill => {
         skillHTML += `
-        <div class="bar">
-              <div class="info">
+        <div class="bar ${skill.category}">
+            <div class="info">
                 <img src=${skill.icon} alt="skill" />
                 <span>${skill.name}</span>
-              </div>
-            </div>`
-    });
+            </div>
+        </div>`
+    })
     skillsContainer.innerHTML = skillHTML;
 }
+
 
 function showProjects(projects) {
     let projectsContainer = document.querySelector("#work .box-container");
@@ -151,6 +153,30 @@ function showProjects(projects) {
 
     /* SCROLL PROJECTS */
     srtop.reveal('.work .box', { interval: 200 });
+    
+    $(document).ready(function() {
+        // Attend que le DOM soit chargé
+        $('#skills .container2').animate({ height: '0%' }, 1000);
+      });
+
+  $(document).ready(function() {
+    // Ajoute le style position: relative à l'élément #skillsContainer .bar
+    $("#skillsContainer .bar").css("position", "static");
+  });
+
+
+
+    var $grid = $('.container2').isotope({
+        itemSelector: '.bar',
+    });
+
+    // filter items on button click
+    $('.button-group').on('click', 'button', function () {
+        $('.button-group').find('.is-checked').removeClass('is-checked');
+        $(this).addClass('is-checked');
+        var filterValue = $(this).attr('data-filter');
+        $grid.isotope({ filter: filterValue });
+    });
 
 }
 
@@ -283,8 +309,8 @@ srtop.reveal('.about .content p', { delay: 200 });
 
 
 /* SCROLL SKILLS */
-srtop.reveal('.skills .container', { interval: 200 });
-srtop.reveal('.skills .container .bar', { delay: 400 });
+srtop.reveal('.skills .container2', { interval: 200 });
+srtop.reveal('.skills .container2 .bar', { delay: 400 });
 
 /* SCROLL EDUCATION */
 // srtop.reveal('.education .box', { interval: 200 });

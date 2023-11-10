@@ -1,0 +1,59 @@
+{
+    "timeline": [
+      {
+        "position": "left",
+        "tag": "Self Employed",
+        "title": "Full Stack Developer",
+        "date": "Oct 2021 - present"
+      },
+      {
+        "position": "right",
+        "tag": "DevIncept (Top Contributor)",
+        "title": "DCP 2021 Contributor | Open Source Program",
+        "date": "July 2021 - October 2021"
+      },
+      {
+        "position": "left",
+        "tag": "LetsGrowMore Summer of Code",
+        "title": "LGM-SOC'21 Participant | Open Source Program",
+        "date": "June 2021 - August 2021"
+      },
+      {
+        "position": "right",
+        "tag": "Mapstreak Flyseas",
+        "title": "Web Developer | Internship",
+        "date": "June 2021 - Dec 2021"
+      },
+      {
+        "position": "left",
+        "tag": "The Spark Foundation",
+        "title": "Website Developer | Internship",
+        "date": "May 2021 - June 2021"
+      },
+      {
+        "position": "right",
+        "tag": "The Spark Foundation",
+        "title": "Mobile Application Developer | Internship",
+        "date": "April 2021 - May 2021"
+      },
+      {
+        "position": "left",
+        "tag": "Frshr Technologies",
+        "title": "Wordpress Developer | Internship",
+        "date": "April 2021 - April 2021"
+      },
+      {
+        "position": "right",
+        "tag": "WonderingBlog",
+        "title": "Web Development & SEO | Internship",
+        "date": "March 2021 - April 2021"
+      },
+      {
+        "position": "left",
+        "tag": "Hacktoberfest 2020",
+        "title": "Contributor | Open Source Program",
+        "date": "October 2020 - November 2020"
+      }
+    ]
+  }
+  
