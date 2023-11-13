@@ -355,9 +355,9 @@ header .navbar ul li a:hover::after {
   .socials {
     margin-top: 12rem;
   }
-  .home .image img {
+  /* .home .image img {
     margin-top: -12rem;
-  }
+  } */
   .home .content p {
     font-size: 2.2rem;
   }
@@ -627,6 +627,10 @@ header .navbar ul li a:hover::after {
   align-items: center;
   gap: 1rem;
   margin-top: 0.5rem;
+}
+.skills .container2 .bar img {
+  width: 48px;
+  height: 48px;
 }
 .skills .container2 .bar .info i {
   font-size: 4rem;
