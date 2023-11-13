@@ -601,6 +601,7 @@ header .navbar ul li a:hover::after {
   width: 90%;
   margin: auto;
   margin-top: 2rem;
+  height: 0% !important;
 }
 .skills .container2 .row {
   display: grid;

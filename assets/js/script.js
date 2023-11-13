@@ -157,6 +157,8 @@ function showProjects(projects) {
     $(document).ready(function() {
         // Attend que le DOM soit chargé
         $('#skills .container2').animate({ height: '0%' }, 1000);
+        // $('#skills .container2').css("max-height","max-content");
+
       });
 
   $(document).ready(function() {

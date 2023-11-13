@@ -2,12 +2,12 @@
     {
         "name": "Angular",
         "category": "dev",
-        "icon": "https://icons8.com/icon/j9DnICNnlhGk/angularjs"
+        "icon": "https://img.icons8.com/color/48/angularjs.png"
     },
     {
         "name": "Spring Boot",
         "category": "secu",
-        "icon": "https://icons8.com/icon/j9DnICNnlhGk/angularjs"
+        "icon": "https://img.icons8.com/color/48/spring-logo.png"
     },
     {
         "name": "NodeJS",
@@ -15,9 +15,9 @@
         "icon": "https://img.icons8.com/color/48/000000/nodejs.png"
     },
     {
-        "name": "Redux",
+        "name": "Npm",
         "category": "secu",
-        "icon": "https://img.icons8.com/color/48/000000/redux.png"
+        "icon": "https://img.icons8.com/color/48/npm.png"
     },
     {
         "name": "MaterialUI",
@@ -82,7 +82,7 @@
     {
         "name": "Azure",
         "category": "dev",
-        "icon": "https://icons8.com/icon/VLKafOkk3sBX/azure"
+        "icon": "https://img.icons8.com/color/48/azure-1.png"
     },
     {
         "name": "Heroku",
@@ -95,9 +95,9 @@
         "icon": "https://img.icons8.com/external-tal-revivo-shadow-tal-revivo/48/000000/external-netlify-a-cloud-computing-company-that-offers-hosting-and-serverless-backend-services-for-static-websites-logo-shadow-tal-revivo.png"
     },
     {
-        "name": "DigitalOcean",
+        "name": "Docker",
         "category": "dev",
-        "icon": "https://img.icons8.com/ios-filled/48/0080FF/digitalocean.png"
+        "icon": "https://img.icons8.com/color/48/docker.png"
     },
     {
         "name": "Bitbucket",
@@ -118,5 +118,31 @@
         "name": "WordPress",
         "category": "dev",
         "icon": "https://img.icons8.com/color/48/000000/wordpress.png"
-    }    
+    },
+    
+    {
+        "name": "Ubuntu",
+        "category": "server",
+        "icon": "https://img.icons8.com/color/48/ubuntu--v1.png"
+    },
+    {
+        "name": "CentOs",
+        "category": "server",
+        "icon": "https://img.icons8.com/color/48/centos.png"
+    },
+    {
+        "name": "Windows Server",
+        "category": "server",
+        "icon": "https://img.icons8.com/color/48/windows-10.png"
+    },
+    {
+        "name": "Cisco Router",
+        "category": "netwk",
+        "icon": "https://img.icons8.com/color/48/cisco-router.png"
+    },
+    {
+        "name": "Nagios Pluging",
+        "category": "netwk",
+        "icon": "https://logodix.com/logo/1748012.png"
+    }   
 ]
