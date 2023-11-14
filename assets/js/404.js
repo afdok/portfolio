@@ -24,3 +24,15 @@ document.onkeydown = function(e) {
      return false;
   }
 }
+
+document.addEventListener('visibilitychange',
+   function () {
+      if (document.visibilityState === "visible") {
+         document.title = "Portfolio | Anselme Kodia";
+         $("#favicon").attr("href", "assets/images/android-chrome-512x512.png");
+      }
+      else {
+         document.title = "Come Back To Portfolio";
+         $("#favicon").attr("href", "assets/images/android-chrome-512x512.png");
+      }
+   });

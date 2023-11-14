@@ -6,22 +6,22 @@
     },
     {
         "name": "Spring Boot",
-        "category": "secu",
+        "category": "dev",
         "icon": "https://img.icons8.com/color/48/spring-logo.png"
     },
     {
         "name": "NodeJS",
-        "category": "secu",
+        "category": "dev",
         "icon": "https://img.icons8.com/color/48/000000/nodejs.png"
     },
     {
         "name": "Npm",
-        "category": "secu",
+        "category": "dev",
         "icon": "https://img.icons8.com/color/48/npm.png"
     },
     {
         "name": "MaterialUI",
-        "category": "secu",
+        "category": "dev",
         "icon": "https://img.icons8.com/color/48/000000/material-ui.png"
     },
     {
@@ -65,9 +65,9 @@
         "icon": "https://img.icons8.com/offices/48/000000/php-logo.png"
     },
     {
-        "name": "Python",
+        "name": "SQL Server",
         "category": "dev",
-        "icon": "https://img.icons8.com/color/48/000000/python--v1.png"
+        "icon": "https://img.icons8.com/color/48/microsoft-sql-server.png"
     },
     {
         "name": "MySQL",
@@ -101,17 +101,17 @@
     },
     {
         "name": "Bitbucket",
-        "category": "netwk",
+        "category": "dev",
         "icon": "https://img.icons8.com/ios-filled/48/1169ae/jquery.png"
     },
     {
         "name": "Git VCS",
-        "category": "netwk",
+        "category": "dev",
         "icon": "https://img.icons8.com/color/48/000000/git.png"
     },
     {
         "name": "GitHub",
-        "category": "netwk",
+        "category": "dev",
         "icon": "https://img.icons8.com/glyph-neue/48/ffffff/github.png"
     },
     {
@@ -141,8 +141,48 @@
         "icon": "https://img.icons8.com/color/48/cisco-router.png"
     },
     {
+        "name": "Cisco Packeet Tracer",
+        "category": "netwk",
+        "icon": "https://2.bp.blogspot.com/-91Og1JzFXQk/XYlLgeNB2LI/AAAAAAAAIxc/R95KsDWvm8QxcyznPqZfwpotw57FZ6v7gCLcBGAsYHQ/s320/Packet%2BTracer.png"
+    },
+    {
+        "name": "GNS3",
+        "category": "netwk",
+        "icon": "https://cdn.icon-icons.com/icons2/1381/PNG/512/gns3_94911.png"
+    },
+    {
         "name": "Nagios Pluging",
         "category": "netwk",
         "icon": "https://logodix.com/logo/1748012.png"
+    },
+    {
+        "name": "WireShark",
+        "category": "netwk",
+        "icon": "https://cdn.icon-icons.com/icons2/1508/PNG/512/wireshark_104082.png"
+    },
+    {
+        "name": "NMAP",
+        "category": "netwk",
+        "icon": "https://dl2.macupdate.com/images/icons256/36710.png"
+    }, 
+    {
+        "name": "LDAP",
+        "category": "server",
+        "icon": "https://startupstack.tech/images/ldap-logo.png"
+    },       
+    {
+        "name": "Metasploit",
+        "category": "secu",
+        "icon": "https://pbs.twimg.com/profile_images/580131056629735424/2ENTk2K2.png"
+    },
+    {
+        "name": "Snort",
+        "category": "secu",
+        "icon": "https://assets.stickpng.com/thumbs/62c5bda26aad5aedf80e37fe.png"
+    },
+    {
+        "name": "Burp Suite",
+        "category": "secu",
+        "icon": "https://cdn.icon-icons.com/icons2/3053/PNG/512/burp_suite_alt_macos_bigsur_icon_190317.png"
     }   
 ]

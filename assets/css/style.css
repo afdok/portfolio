@@ -417,6 +417,7 @@ header .navbar ul li a:hover::after {
   font-family: "Nunito";
   font-weight: 600;
   text-transform: none;
+  
 }
 .about .row .content .box-container {
   display: flex;
@@ -553,6 +554,7 @@ header .navbar ul li a:hover::after {
   background: linear-gradient(to bottom, #512e3d, #424751);
   /* height: 80vh; */
   max-height: max-content;
+  clip-path: polygon(0 -30%,100% 5%, 100% 100%, 0 100%);  
 }
 .skills h2 {
   color: #fff;
@@ -1104,6 +1106,7 @@ header .navbar ul li a:hover::after {
 .contact {
   background: #e5ecfb;
   min-height: 60vh;
+  clip-path: polygon(0 -30%,100% 5%, 100% 100%, 0 100%);  
 }
 .contact .container {
   max-width: 1050px;
@@ -1171,11 +1174,11 @@ form .message textarea {
 .field input:focus,
 .message textarea:focus {
   padding-left: 47px;
-  border: 2px solid rgb(115, 3, 167);
+  border: 2px solid rgb(148, 8, 8);;
 }
 .field input:focus ~ i,
 .message textarea:focus ~ i {
-  color: rgb(115, 3, 167);
+  color: rgb(157, 27, 27);
 }
 form .message {
   position: relative;
