@@ -155,14 +155,11 @@ function showProjects(projects) {
     srtop.reveal('.work .box', { interval: 200 });
     
     $(document).ready(function() {
-        // Attend que le DOM soit chargé
         $('#skills .container2').animate({ height: '0%' }, 1000);
-        // $('#skills .container2').css("max-height","max-content");
 
       });
 
   $(document).ready(function() {
-    // Ajoute le style position: relative à l'élément #skillsContainer .bar
     $("#skillsContainer .bar").css("position", "static");
   });
 

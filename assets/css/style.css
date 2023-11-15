@@ -433,7 +433,7 @@ header .navbar ul li a:hover::after {
   color: rgb(247, 46, 46);
 }
 .resumebtn {
-  margin-top: 6rem;
+  margin-top: 4rem;
 }
 .resumebtn .btn {
   padding: 1.7rem 3rem;
