@@ -82,7 +82,7 @@ header {
   box-shadow: 0 1px 4px rgba(146, 161, 176, 0.3);
 }
 section {
-  min-height: max-content;
+  min-height: 100vh;
   padding: 2rem 9%;
 }
 .heading {
@@ -204,7 +204,7 @@ header .navbar ul li a:hover::after {
   display: flex;
   flex-wrap: wrap;
   gap: 1.5rem;
-  min-height: 50vh;
+  min-height: 100vh;
   align-items: center;
 }
 .home #particles-js {
@@ -343,7 +343,7 @@ header .navbar ul li a:hover::after {
   background-color: #e01b24;
 }
 .social-icons a.spring:hover {
-  background-color: #3eba0d;
+  background-color: #ed333b;
 }
 .social-icons a.dev:hover {
   background-color: #070707;
@@ -368,7 +368,7 @@ header .navbar ul li a:hover::after {
     font-size: 2.2rem;
   }
   .home .content p span {
-    font-size: 2.2rem;
+    font-size: 2rem;
   }
 }
 /* hero media queries ends*/
@@ -815,7 +815,6 @@ header .navbar ul li a:hover::after {
 .work {
   background: #512e3d;
   /* background: linear-gradient(to bottom, #000031, #00002c); */
-  max-height:max-content
   
 }
 .work h2 {
@@ -1113,7 +1112,7 @@ header .navbar ul li a:hover::after {
 /* contact section starts */
 .contact {
   background: #e5ecfb;
-  /* min-height: 60vh; */
+  min-height: 60vh;
   clip-path: polygon(0 -30%,100% 5%, 100% 100%, 0 100%);  
 }
 .contact .container {
@@ -1248,7 +1247,7 @@ form .button-area {
 /* contact section media queries starts */
 @media (max-width: 900px) {
   .contact {
-    min-height: max-content;
+    min-height: 70vh;
   }
   .contact .container {
     margin: 3rem 0 2rem 0;
