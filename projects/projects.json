@@ -1,12 +1,43 @@
+
 [
+  {
+    "name": "Gestion de plans de prospection",
+    "desc": "Full-stack project dashboard using Angular 12 and Spring Boot 3 to create prospecting plans, distribute them among agents, while also enabling N+2 level supervision.",
+    "image": "gestiondepprospection",
+    "category": "Fullstack",
+    "links": {
+      "view": "",
+      "code": "#"
+    }
+  },
+  {
+    "name": "Media Qr-code",
+    "desc": "Designer in the color of the community and allows you to be redirected to all the social networks of the community",
+    "image": "mediavasedhonneurrabat",
+    "category": "qrcode",
+    "links": {
+      "view": "https://vasedhonneurrabatmedia.pages.dev/",
+      "code": "#"
+    }
+  },
+  {
+    "name": "Quiz",
+    "desc": "JavaScript Basic Quizz which will generate statistics at the end, including a summary of right and wrong answers.",
+    "image": "quizz-js",
+    "category": "Javascript",
+    "links": {
+      "view": "https://funquizz.pages.dev/",
+      "code": "#"
+    }
+  },  
   {
     "name": "NotyStack Android",
     "desc": "Fully fledged android CRUD app based on different design patterns. Built using Java, XML, SQLite, Firebase, RoomDB, MVVM.",
     "image": "notystackandroid",
     "category": "android",
     "links": {
-      "view": "https://www.linkedin.com/posts/jigar-sable_androiddev-androidstudio-java-activity-6955224473822199808-JT0j",
-      "code": "https://github.com/jigar-sable/notystack-android"
+      "view": "",
+      "code": ""
     }
   },
   {
@@ -15,8 +46,8 @@
     "image": "sppuprepandroid",
     "category": "android",
     "links": {
-      "view": "https://www.linkedin.com/posts/jigar-sable_androiddev-androidstudio-java-activity-6955224473822199808-JT0j",
-      "code": "https://github.com/jigar-sable/sppu-prep-android"
+      "view": "",
+      "code": ""
     }
   },
   {
@@ -25,8 +56,8 @@
     "image": "newsboxandroid",
     "category": "android",
     "links": {
-      "view": "https://www.linkedin.com/posts/jigar-sable_androiddev-androidstudio-java-activity-6955224473822199808-JT0j",
-      "code": "https://github.com/jigar-sable/newsbox-android"
+      "view": "",
+      "code": ""
     }
   },
   {
@@ -35,8 +66,8 @@
     "image": "weatherlyandroid",
     "category": "android",
     "links": {
-      "view": "https://www.linkedin.com/posts/jigar-sable_androiddev-androidstudio-java-activity-6955224473822199808-JT0j",
-      "code": "https://github.com/jigar-sable/weatherly-android"
+      "view": "",
+      "code": ""
     }
   },
   {
