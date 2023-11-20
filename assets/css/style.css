@@ -555,11 +555,9 @@ header .navbar ul li a:hover::after {
 /* about section ends */
 
 /* skills section starts */
+
 .skills {
-  /* background: linear-gradient(to bottom, #512e3d, #bba18e); 323844*/
   background: linear-gradient(to bottom, #512e3d, #424751);
-  /* height: 80vh; */
-  max-height: max-content;
   clip-path: polygon(0 -30%,100% 5%, 100% 100%, 0 100%);  
 }
 .skills h2 {
@@ -704,6 +702,7 @@ header .navbar ul li a:hover::after {
 /* education section starts */
 .education {
   background: #e5ecfb;
+  min-height: max-content;
 }
 .education .position{
   margin-top: 5%;
@@ -814,8 +813,7 @@ header .navbar ul li a:hover::after {
 /* work section starts */
 .work {
   background: #512e3d;
-  /* background: linear-gradient(to bottom, #000031, #00002c); */
-  
+  max-height: max-content;  
 }
 .work h2 {
   color: #fff;
@@ -877,7 +875,7 @@ header .navbar ul li a:hover::after {
   justify-content: center;
 }
 .work .desc p {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
 }
 .work .desc .btns {
   display: flex;
@@ -925,10 +923,7 @@ header .navbar ul li a:hover::after {
   transition: 0.3s;
 }
 .work .viewall .btn:hover {
-  /* background: #fff;
-  color: #000; */
   background: linear-gradient(135deg, rgb(157, 27, 27), #323844);
-
 }
 .work .viewall .btn:hover i {
   transform: translateX(5px);
@@ -936,6 +931,9 @@ header .navbar ul li a:hover::after {
 /* work section ends */
 
 /* experience section starts */
+.experience{
+  min-height: max-content;
+}
 .experience .timeline {
   position: relative;
   max-width: 1200px;
@@ -1112,7 +1110,7 @@ header .navbar ul li a:hover::after {
 /* contact section starts */
 .contact {
   background: #e5ecfb;
-  min-height: 60vh;
+  min-height: max-content;
   clip-path: polygon(0 -30%,100% 5%, 100% 100%, 0 100%);  
 }
 .contact .container {
@@ -1247,7 +1245,7 @@ form .button-area {
 /* contact section media queries starts */
 @media (max-width: 900px) {
   .contact {
-    min-height: 70vh;
+    min-height: max-content;
   }
   .contact .container {
     margin: 3rem 0 2rem 0;
@@ -1389,7 +1387,7 @@ form .button-area {
     font-size: 1.5rem;
   }
   .education .box-container .box .content p{
-    font-size: 1.001rem;
+    font-size: 1.05rem;
   }
 }
 /* common media queries ends*/
