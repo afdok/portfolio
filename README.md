@@ -15,7 +15,11 @@ Particle.js, Typed.js, Tilt.js, Scroll Reveal, Tawk.to, Font Awesome and JSON
 
 ## 📌 Sneak Peek of Main Page 🙈 :
 ![mockup720](https://portfolio-kodia.vercel.app/assets/images/projects/portfoliowebsite.png)
+<<<<<<< HEAD
 ![ss](https://drive.google.com/file/d/1PxIFYEz4OZzDyAj8-ugkOHQqrDltK8xC/view?usp=sharing)
+=======
+![ss](https://portfolio-kodia.vercel.app/assets/images/skills/fullstackskills.png)
+>>>>>>> e6566d7 (update section education, add pop-up)
 
 
 <h2>📬 Contact</h2>
