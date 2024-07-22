@@ -3,6 +3,7 @@
 document.addEventListener('DOMContentLoaded', (event) => {
     const popup = document.getElementById('popupcontent');
     const closeBtn = document.getElementById('close');
+    const closeBtnUp = document.getElementById('up');
     const popupDisplayTime = 3000; // délai en millisecondes avant d'afficher le pop-up
 
     const showPopup = () => {
@@ -27,6 +28,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
 
     // Fermer le pop-up lorsque le bouton de fermeture est cliqué
     closeBtn.addEventListener('click', hidePopup);
+    closeBtnUp.addEventListener('click', hidePopup);
 
     // Fermer le pop-up lorsqu'on clique à l'extérieur du contenu
     popup.addEventListener('click', (e) => {
