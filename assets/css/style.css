@@ -228,12 +228,12 @@ header .navbar ul li a:hover::after {
   z-index: 1;
 }
 .home .image {
-  flex: 1 1 40rem;
+  flex: 1 1 45rem;
   z-index: 1;
 }
 .home .image img {
   width: 70%;
-  margin-left: 6rem;
+  margin-left: 8rem;
   border-radius: 50%;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
   cursor: pointer;
@@ -374,7 +374,7 @@ header .navbar ul li a:hover::after {
 /* hero media queries ends*/
 /* hero section end */
 
-/* popup start */
+/* popup start 
 .popup {
   display: none;
   position: fixed;
@@ -416,7 +416,7 @@ header .navbar ul li a:hover::after {
   right: 10px;
   cursor: pointer;
   font-size: 20px;
-}
+}*/
 
 /*popup ends*/
 
@@ -469,7 +469,7 @@ header .navbar ul li a:hover::after {
   font-family: "Nunito";
   font-weight: 600;
   text-transform: none;
-  
+
 }
 .about .row .content .box-container {
   display: flex;

@@ -310,7 +310,7 @@ srtop.reveal('.work .box', { interval: 200 });
 srtop.reveal('.experience .timeline', { delay: 400 });
 srtop.reveal('.experience .timeline .container', { interval: 400 });
 
-/* for pop-up section start*/
+/* for pop-up section start
 document.addEventListener('DOMContentLoaded', (event) => {
     const popup = document.getElementById('popup');
     const closeBtn = document.getElementById('close-btn');
@@ -367,5 +367,5 @@ document.addEventListener('DOMContentLoaded', (event) => {
         }
         return "";
     }
-});
+});*/
 
