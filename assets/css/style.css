@@ -95,17 +95,10 @@ section {
   color: rgb(247, 46, 46);
 }
 header .logo {
-  font-size: 1.9rem;
-  font-weight: 800;
-  text-decoration: none;
-  color: #0e2431;
+  width: 40px; /* Largeur du logo */
+  height: auto; /* Maintient le ratio d'aspect */
 }
-header .logo i {
-  font-size: 2.2rem;
-}
-header .logo:hover {
-  color: #fc8c05;
-}
+
 header .navbar ul {
   list-style: none;
   display: flex;
